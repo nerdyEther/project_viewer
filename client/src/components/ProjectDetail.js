@@ -15,7 +15,7 @@ const ProjectDetail = ({ token }) => {
     const fetchProject = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`https://project-viewer-tv5f.onrender.com/projects/${id}`);
+        const response = await axios.get(`https://projectviewer-production.up.railway.app/projects/${id}`);
         setProject(response.data);
         setError(false);
       } catch (error) {
